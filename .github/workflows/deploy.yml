@@ -36,12 +36,13 @@ jobs:
       # - name: Run deploy
       #   run: gh-pages -b main -d build
 
-      - name: npm deploy
-        run: npm run deploy
-
+      
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+      - name: npm deploy
+        run: npm run deploy
