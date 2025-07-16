@@ -28,7 +28,10 @@ jobs:
       - name: Build the React app
         run: npm run build
 
-      - name: Move files
+      - name: Create docs folder
+        run: mkdir docs
+
+      - name: Move build files
         run: cp -r build/* docs/
 
       # Step 5: Deploy to GitHub Pages
