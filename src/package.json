@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hasa24.github.io/POCKET-NOTES-DEPLOYED",
+  "homepage": "https://hasa24.github.io/POCKET-NOTES.0",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
