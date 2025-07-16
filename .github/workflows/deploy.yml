@@ -27,7 +27,8 @@ jobs:
       - name: Configure git
         run: |
           git config --global user.email "sreehasa08@gmail.com" &&
-          git config --global user.name "Hasa24"        
+          git config --global user.name "Hasa24"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
       # Step 4: Build the React app
       - name: Build the React app
